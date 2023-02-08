@@ -21,40 +21,92 @@
             android:id="@+id/lilay"
             android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/imgTask"
-            android:background="#A69B9B"
-            android:src="@drawable/notes"/>
+<!--        <ImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:id="@+id/imgTask"-->
+<!--            android:background="#A69B9B"-->
+<!--            aaaandroid:background="#CDBFBF"-->
+<!--            android:src="@drawable/notes"/>-->
 
 
             <LinearLayout
                 android:id="@+id/ll_data"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
-                android:orientation="horizontal"
+                android:background="@drawable/cornerradius"
+                android:orientation="vertical"
+
                 android:padding="25dp">
 
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title :-"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
                 <TextView
                     android:id="@+id/text1"
-                    android:layout_width="200dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Details"
-                    android:textSize="15dp"
-                    android:textColor="@color/black" />
+                    android:hint="Title"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/delete"
-                    android:id="@+id/delete"/>
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description :-"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/edit" />
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Details"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#876B6B" />
+
+
+
+                <!--                <Button-->
+<!--                    android:id="@+id/edit_button"-->
+<!--                    android:layout_width="71dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginLeft="175dp"-->
+<!--                    android:backgroundTint="#B8B0B0"-->
+<!--                    android:minHeight="48dp"-->
+<!--                    android:text="Edit"-->
+<!--                    android:textColor="#37474F" />-->
+
+
+                <!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:src="@drawable/delete"-->
+<!--                    android:id="@+id/delete"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:src="@drawable/edit" />-->
 
             </LinearLayout>
 

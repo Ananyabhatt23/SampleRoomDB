@@ -22,8 +22,8 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textview_first"
-        android:layout_marginLeft="98dp"
         android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
         android:hint="Description"
         android:textSize="24dp" />
 

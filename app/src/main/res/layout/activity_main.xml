@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/constraint_layout"
     tools:context=".MainActivity">
 
    <androidx.recyclerview.widget.RecyclerView
@@ -13,20 +14,33 @@
        android:id="@+id/recyclerview"
        tools:ignore="MissingConstraints" />
 
-   <androidx.appcompat.widget.AppCompatButton
+<!--   <androidx.appcompat.widget.AppCompatButton-->
+<!--       android:id="@+id/addbtn"-->
+<!--       android:layout_width="61dp"-->
+<!--       android:layout_height="49dp"-->
+<!--       android:layout_marginEnd="28dp"-->
+<!--       android:layout_marginBottom="32dp"-->
+<!--       android:background="#391C1C"-->
+<!--       android:padding="3dp"-->
+<!--       android:scrollbarSize="27dp"-->
+<!--       android:text="+"-->
+<!--       android:textColor="@color/white"-->
+<!--       android:textSize="20sp"-->
+<!--       app:layout_constraintBottom_toBottomOf="parent"-->
+<!--       app:layout_constraintEnd_toEndOf="parent" />-->
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
        android:id="@+id/addbtn"
-       android:layout_width="61dp"
-       android:layout_height="49dp"
-       android:layout_marginEnd="28dp"
-       android:layout_marginBottom="32dp"
-       android:background="#391C1C"
-       android:padding="3dp"
-       android:scrollbarSize="27dp"
-       android:text="+"
-       android:textColor="@color/white"
-       android:textSize="20sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="10dp"
+       android:layout_marginBottom="10dp"
+       android:contentDescription="@string/hide_bottom_view_on_scroll_behavior"
+       android:src="@drawable/add"
+       app:backgroundTint="#876B6B"
        app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent" />
+       app:layout_constraintEnd_toEndOf="parent"
+       tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
